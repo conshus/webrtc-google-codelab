@@ -4,11 +4,12 @@ var os = require('os');
 var nodeStatic = require('node-static');
 var http = require('http');
 var socketIO = require('socket.io');
+const PORT = process.env.PORT || 3000;
 
 var fileServer = new(nodeStatic.Server)();
 var app = http.createServer(function(req, res) {
   fileServer.serve(req, res);
-}).listen(80, () => console.log('server is running'));
+}).listen(PORT, () => console.log('server is running'));
 
 var io = socketIO.listen(app);
 io.sockets.on('connection', function(socket) {
