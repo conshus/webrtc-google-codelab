@@ -8,7 +8,7 @@ var socketIO = require('socket.io');
 var fileServer = new(nodeStatic.Server)();
 var app = http.createServer(function(req, res) {
   fileServer.serve(req, res);
-}).listen(3000, () => console.log('server is running'));
+}).listen(80, () => console.log('server is running'));
 
 var io = socketIO.listen(app);
 io.sockets.on('connection', function(socket) {
