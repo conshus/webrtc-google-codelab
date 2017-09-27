@@ -1,0 +1,27 @@
+{
+  "name": "webrtc-codelab",
+  "version": "0.0.1",
+  "description": "WebRTC codelab",
+  "dependencies": {
+    "mime": "^1.4.0",
+    "node-static": "^0.7.7",
+    "socket.io": "1.2.0"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conshus/webrtc-google-codelab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conshus/webrtc-google-codelab/issues"
+  },
+  "homepage": "https://github.com/conshus/webrtc-google-codelab#readme"
+}
